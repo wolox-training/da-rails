@@ -7,4 +7,5 @@ include DeviseTokenAuth::Concerns::User
          :recoverable, :rememberable, :validatable
 
   validates :first_name, :last_name, :email, presence: true
+
 end
