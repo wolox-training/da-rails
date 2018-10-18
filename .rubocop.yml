@@ -1,0 +1,11 @@
+# Commonly used screens these days easily fit more than 80 characters.
+Metrics/LineLength:
+  Max: 99
+  
+# Check with yard instead.
+Style/Documentation:
+  Enabled: false 
+
+# Style Frozen
+Style/FrozenStringLiteralComment:
+  Enabled: false
