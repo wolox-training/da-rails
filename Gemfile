@@ -41,6 +41,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop'
   gem 'devise'
+  gem 'omniauth'
+  gem 'devise_token_auth'
 end
 
 group :development do
