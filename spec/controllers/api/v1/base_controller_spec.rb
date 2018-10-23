@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-describe api/v1::BaseController do
-
+module Api
+  module V1
+    describe BaseController do
+    end
+  end
 end

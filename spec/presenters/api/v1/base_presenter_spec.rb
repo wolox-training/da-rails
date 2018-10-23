@@ -1,5 +1,4 @@
 require 'rails_helper'
 
-describe api/v1::BasePresenter do
-
+describe api / v1::BasePresenter do
 end
