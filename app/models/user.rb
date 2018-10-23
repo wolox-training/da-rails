@@ -5,5 +5,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  before_save -> { skip_confirmation! }
+  validates :first_name, :last_name, :email, presence: true
+
+
 end
