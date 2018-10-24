@@ -4,7 +4,7 @@ class CreateRents < ActiveRecord::Migration[5.2]
       t.references :user, foreign_key: true, null: false
       t.references :book, foreign_key: true, null: false
       t.date :init_date, null: false
-      t.date :end_date, null: false 
+      t.date :end_date, null: false
 
       t.timestamps
     end
