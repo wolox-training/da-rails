@@ -1,4 +1,4 @@
 class Book < ApplicationRecord
   validates :gender, :author, :image, :title, :editor, :year, presence: true
-  has_many: rents
+  has_many :rents, dependent: :destroy
 end
