@@ -1,4 +1,5 @@
 FactoryBot.define do
+  
   factory :rent do
     association :user, factory: :user
     association :book, factory: :book
