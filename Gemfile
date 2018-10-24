@@ -40,6 +40,8 @@ gem 'omniauth'
 gem 'devise_token_auth'
 # Gem for versionist
 gem 'versionist'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'wor-paginate'
 
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'wor-paginate'
