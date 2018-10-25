@@ -38,7 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'omniauth'
 gem 'devise_token_auth'
-
+# Gem for versionist
+gem 'versionist'
 
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'wor-paginate'
