@@ -7,9 +7,9 @@ module Api
 
       describe 'GET #index' do
         context 'When fetching all books' do
-          let!(:books) { create_list(:book, 3, user: user) }
+          let!(:books) { create_list(:book, 3) }
           before do
-            get :index, params: { id: user.id }
+            get :index
           end
 
           it 'responds with the book json' do
@@ -28,10 +28,10 @@ module Api
 
       describe 'GET #show' do
         context 'When fetching a book' do
-          let!(:book) { create(:book, user: user) }
+          let!(:book) { create(:book) }
 
           before do
-            get :show, params: { user_id: user.id, id: book.id }
+            get :show, params: { id: book.id }
           end
 
           it 'responses with the book json' do
