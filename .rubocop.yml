@@ -1,3 +1,12 @@
+AllCops:
+  Exclude:
+    - spec/support/spec_helper.rb
+    - spec/rails_helper.rb
+    - db/**/*
+    - docs/**/*
+    - config/**/*
+    - bin/**/*
+
 # Commonly used screens these days easily fit more than 80 characters.
 Metrics/LineLength:
   Max: 99
@@ -9,3 +18,10 @@ Style/Documentation:
 # Style Frozen
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
