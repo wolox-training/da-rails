@@ -35,14 +35,16 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
+gem 'omniauth'
+gem 'devise_token_auth'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop'
-  gem 'devise'
-  gem 'omniauth'
-  gem 'devise_token_auth'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  gem 'factory_bot_rails', "~> 4.0"
   
 end
 
@@ -63,8 +65,6 @@ group :test do
   gem 'chromedriver-helper'
   gem 'database_cleaner'
   gem 'rspec-rails', '~> 3.8'
-  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
-  gem 'factory_bot_rails', "~> 4.0"
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
 
