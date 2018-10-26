@@ -1,3 +1,0 @@
-# This doc allow edit sentences or save data 
-# for develop
-User.create(email: 'darwin.araque@wolox.com.co', password: 'darwinaraque', first_name: 'Darwin', last_name: 'Araque')
