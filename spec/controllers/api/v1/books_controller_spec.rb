@@ -35,9 +35,9 @@ module Api
           end
 
           it 'responses with the book json' do
-            expect(JSON.parse(response.body)).to eq BookSerializer.new(
-              book, root: false
-            ).to_json
+            expect(JSON.parse(response.body)).to eq JSON.parse(BookSerializer.new(
+              book
+            ).to_json)
           end
 
           it 'responds with 200 status' do
