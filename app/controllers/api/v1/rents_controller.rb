@@ -10,10 +10,10 @@ module Api
 
       def create
         @rent = Rent.create(rent_params)
-        if @rent.valid? then
-        render json: @rent
+        if @rent.valid?
+          render json: @rent
         else
-        render json: @rent.errors 
+          render json: @rent.errors
         end
       end
 
