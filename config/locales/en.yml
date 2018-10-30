@@ -31,3 +31,13 @@
 
 en:
   hello: "Hello world"
+  rent:
+    mail:
+      rent_created:
+        main_message: "The rent was created"
+        date_title: "Rent created"
+        init_date_title: "Init rent"
+  book:
+    gender: "Gender"
+    title: "Title"
+    year: "Year"
