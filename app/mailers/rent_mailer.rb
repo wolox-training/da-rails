@@ -1,8 +1,7 @@
 class RentMailer < ApplicationMailer
 
-  def rent_created
-    @email_to = ENV['MAILER_DOMAIN']
-    mail(to: @email_to, subject: 'Sending a confirma mail')
-
+  def rent_created (rent)
+    @rent = rent
+    mail(to: @rent.user.email, subject: 'sending a confirm rent email')
   end
 end

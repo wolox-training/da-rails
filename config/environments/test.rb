@@ -47,11 +47,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    :user_name =>  ENV['USER_NAME'],
-    :password => ENV['PASSWORD'],
-    :address => ENV['ADDRESS'],
-    :domain => ENV['DOMAIN'],
-    :port => ENV['PORTMAIL'],
+    :user_name =>  Rails.application.secrets.user_name,
+    :password => Rails.application.secrets.password,
+    :address => Rails.application.secrets.address,
+    :domain => Rails.application.secrets.domain,
+    :port => Rails.application.secrets.port,
     :authentication => :cram_md5
   }
 end
