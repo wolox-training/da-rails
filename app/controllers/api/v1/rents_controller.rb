@@ -2,7 +2,7 @@ module Api
   module V1
     class RentsController < ApplicationController
       include Wor::Paginate
-      # before_action :authenticate_api_v1_user!
+      before_action :authenticate_api_v1_user!
 
       def index
         render_paginated Rent, each_serializer: RentSerializer
@@ -10,11 +10,8 @@ module Api
 
       def create
         @rent = Rent.create(rent_params)
-        if @rent.valid?
-          render json: @rent
-        else
-          render json: @rent.errors
-        end
+
+        render json: @rent.persisted? ? @rent : @rent.errors
       end
 
       def rent_params
