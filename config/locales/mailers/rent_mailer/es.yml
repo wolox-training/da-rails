@@ -4,3 +4,4 @@ es:
       rent_created:
         title: 'Exito!!'
         main_message: 'El prestamo para %{book} ha sido registrado exitosamente'
+        subject: 'Enviando un email para confirmar el prestamo'
