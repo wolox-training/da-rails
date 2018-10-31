@@ -7,5 +7,5 @@ Rails.application.routes.draw do
       resources :rents
     end
     mount_devise_token_auth_for 'User', at: 'auth'
-  end   
+  end  
 end
