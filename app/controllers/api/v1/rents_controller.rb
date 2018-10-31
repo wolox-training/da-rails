@@ -10,7 +10,7 @@ module Api
 
       def create
         @rent = Rent.create(rent_params)
-        RentMailerWorker.perform_async
+        RentMailer.rent_created(@rent).deliver_later
         render json: @rent.persisted? ? @rent : @rent.errors
       end
 

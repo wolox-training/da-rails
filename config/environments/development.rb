@@ -62,14 +62,13 @@ Rails.application.configure do
   # Devise configuration
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = (Rails.application.secrets.smtp || 'smtp').to_sym
 
-  config.action_mailer.smtp_settings = {
-    :user_name =>  Rails.application.secrets.user_name,
-    :password => Rails.application.secrets.password,
-    :address => Rails.application.secrets.address,
-    :domain => Rails.application.secrets.domain,
-    :port => Rails.application.secrets.port,
-    :authentication => :cram_md5
-  }
+   user_name: Rails.application.secrets.user_name,
+   password: Rails.application.secrets.password,
+   address: Rails.application.secrets.address,
+   domain: Rails.application.secrets.domain,
+   port: Rails.application.secrets.port,
+   authentication: (Rails.application.secrets.cram_md5 || 'cram_md5').to_sym
+ }
 end
