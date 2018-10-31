@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    attributes:
+      rent:
+        user: 'Usuario'
+        book: 'Libro'
+        init_date: 'Fecha inicial'
+        end_date: 'Fecha final'
+        created_at: 'Fecha de registro'
+    models:
+      single: 'Prestamo'
+      plural: 'Prestamos'

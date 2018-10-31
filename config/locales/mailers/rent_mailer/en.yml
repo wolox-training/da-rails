@@ -1,0 +1,6 @@
+en:
+  mailer:
+    rent_mailer:
+      rent_created:
+        title: 'Good job!!!'
+        main_message: 'The rent for %{book} was created'
