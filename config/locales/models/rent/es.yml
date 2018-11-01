@@ -8,5 +8,6 @@ es:
         end_date: 'Fecha final'
         created_at: 'Fecha de registro'
     models:
-      single: 'Prestamo'
-      plural: 'Prestamos'
+      rent:
+        one: 'Prestamo'
+        others: 'Prestamos'

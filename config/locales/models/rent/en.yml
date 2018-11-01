@@ -8,5 +8,6 @@ en:
         end_date: 'End date'
         created_at: 'Created at'
     models:
-      single: 'Rent'
-      plural: 'Rents'
+      rent:
+        one: 'Rent'
+        other: 'Rents'
