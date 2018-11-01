@@ -1,0 +1,4 @@
+en:
+  devise:
+    failure:
+      unauthenticated: 'You are not authorized to access this application'
