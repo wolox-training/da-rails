@@ -63,7 +63,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   config.action_mailer.delivery_method = (Rails.application.secrets.smtp || 'smtp').to_sym
-
+  config.action_mailer.smtp_settings = {
    user_name: Rails.application.secrets.user_name,
    password: Rails.application.secrets.password,
    address: Rails.application.secrets.address,
