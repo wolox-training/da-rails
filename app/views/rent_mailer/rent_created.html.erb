@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+  </style>
+  <body>
+    <header>
+       <h1><%= @rent.book.title %> </h1>
+       <p>The rent was created</p>
+       
+    </header>
+    <section>
+       <article>
+           <h2>Rent Created</h2>
+           <p> <%= @rent.created_at %> </p>
+       </article>
+    </section>
+    <section>
+       <article>
+           <h2>Init Rent</h2>
+          <p> <%= @rent.init_date %> </p>
+       </article>
+    </section>
+
+    <footer>
+       <table>
+        <tr>
+          <th>Gender</th>
+          <th>Year</th> 
+          <th>Author</th>
+        </tr>
+        <tr>
+          <td><%= @rent.book.gender %></td>
+          <td><%= @rent.book.year %></td> 
+          <td><%= @rent.book.author %></td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
