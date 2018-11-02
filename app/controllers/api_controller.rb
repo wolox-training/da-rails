@@ -8,7 +8,7 @@ class ApiController < ActionController::Base
   def set_locale
     I18n.locale = current_api_v1_user&.locale || I18n.default_locale
   end
-  
+
   def pundit_user
     current_api_v1_user
   end

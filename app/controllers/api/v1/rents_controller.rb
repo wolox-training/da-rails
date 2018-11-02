@@ -1,11 +1,10 @@
 module Api
   module V1
     class RentsController < ApiController
-      
       include Wor::Paginate
-      
+
       before_action :authenticate_api_v1_user!
-      
+
       def index
         render_paginated current_api_v1_user.rents
       end
