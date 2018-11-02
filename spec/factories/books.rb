@@ -5,6 +5,6 @@ FactoryBot.define do
     image { Faker::Simpsons.quote }
     title { Faker::Food.dish }
     editor { Faker::Simpsons.location }
-    year { 1993 }
+    year { Faker::Number.between(1900, 2018) }
   end
 end
