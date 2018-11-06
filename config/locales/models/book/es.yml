@@ -11,4 +11,4 @@ es:
     models:
       book:
         one: 'Libro'
-        others: 'Libros'
+        other: 'Libros'

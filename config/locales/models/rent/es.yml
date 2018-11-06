@@ -10,4 +10,4 @@ es:
     models:
       rent:
         one: 'Prestamo'
-        others: 'Prestamos'
+        other: 'Prestamos'
