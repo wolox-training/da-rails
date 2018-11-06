@@ -1,16 +1,12 @@
 class RentPolicy
-  attr_reader :user, :record
+  attr_reader :user, :rent
 
-  def initialize(user, record)
+  def initialize(user, rent)
     @user = user
-    @record = record
-  end
-
-  def resolve
-    scope.all
+    @rent = rent
   end
 
   def create?
-    user.id == record.user.id
+    @user.id == @rent.user.id
   end
 end
