@@ -10,19 +10,19 @@
   </style>
   <body>
     <header>
-       <h1><%= @rent.book.title %> </h1>
-       <p>The rent was created</p>
+       <h1><%= t('mailer.rent_mailer.rent_created.title') %> </h1>
+       <p><%= t('mailer.rent_mailer.rent_created.main_message', book: @rent.book.title) %></p>
        
     </header>
     <section>
        <article>
-           <h2>Rent Created</h2>
+           <h2><%= t('activerecord.attributes.rent.created_at') %> </h2>
            <p> <%= @rent.created_at %> </p>
        </article>
     </section>
     <section>
        <article>
-           <h2>Init Rent</h2>
+           <h2><%= t('activerecord.attributes.rent.init_date') %></h2>
           <p> <%= @rent.init_date %> </p>
        </article>
     </section>
@@ -30,9 +30,9 @@
     <footer>
        <table>
         <tr>
-          <th>Gender</th>
-          <th>Year</th> 
-          <th>Author</th>
+          <th><%= t('activerecord.attributes.book.gender') %></th>
+          <th><%=  t('activerecord.attributes.book.year') %></th> 
+          <th><%= t('activerecord.attributes.book.author') %></th>
         </tr>
         <tr>
           <td><%= @rent.book.gender %></td>

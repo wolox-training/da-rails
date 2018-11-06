@@ -1,0 +1,13 @@
+en:
+  activerecord:
+    attributes:
+      rent:
+        user: 'User'
+        book: 'Book'
+        init_date: 'Initial date'
+        end_date: 'End date'
+        created_at: 'Created at'
+    models:
+      rent:
+        one: 'Rent'
+        other: 'Rents'
