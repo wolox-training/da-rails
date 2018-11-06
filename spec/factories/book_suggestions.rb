@@ -5,7 +5,7 @@ FactoryBot.define do
     author { Faker::Book.publisher }
     title { Faker::Book.title }
     link { Faker::Internet.url }
-    edithor { Faker::Book.author }
+    editor { Faker::Book.author }
     year { Faker::Number.between(1990, 2018) }
     association :user, factory: :user
   end

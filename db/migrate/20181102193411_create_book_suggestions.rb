@@ -6,7 +6,7 @@ class CreateBookSuggestions < ActiveRecord::Migration[5.2]
       t.string :author, null: false
       t.string :title, null: false
       t.string :link, null: false
-      t.string :edithor, null: false 
+      t.string :editor, null: false 
       t.string :year, null: false
       t.references :user, foreign_key: true, null: false
 
