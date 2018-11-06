@@ -9,5 +9,6 @@ en:
         edithor: 'Edithor'
         year: 'Year'
     models:
-      single: 'Book'
-      plural: 'Books'
+      book:
+        one: 'Book'
+        other: 'Books'
