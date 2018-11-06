@@ -1,0 +1,14 @@
+es:
+  activerecord:
+    attributes:
+      book:
+        gender: 'Genero'
+        author: 'Autor'
+        image: 'Imagen'
+        title: 'Titulo'
+        edithor: 'Editor'
+        year: 'Año'
+    models:
+      book:
+        one: 'Libro'
+        other: 'Libros'
