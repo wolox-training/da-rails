@@ -1,0 +1,4 @@
+es:
+  devise:
+    failure:
+      unauthenticated: 'Usted no se encuentra autorizado para acceder a esta aplicación'

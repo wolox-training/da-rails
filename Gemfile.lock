@@ -198,6 +198,8 @@ GEM
     powerpack (0.1.2)
     public_suffix (3.0.3)
     puma (3.12.0)
+    pundit (2.0.0)
+      activesupport (>= 3.0.0)
     rack (2.0.5)
     rack-protection (2.0.4)
       rack
@@ -358,6 +360,7 @@ DEPENDENCIES
   omniauth
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
+  pundit
   rails (~> 5.2.1)
   rails-i18n
   rspec-rails (~> 3.8)
