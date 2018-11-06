@@ -3,13 +3,18 @@ module Api
     class BookSuggestionsController < ApplicationController
 
       def create
+        puts book_suggestion_params
         @bookSugesstion = BookSuggestion.create(book_suggestion_params)
-        return render json:  @bookSuggestion, status: :created if @bookSugesstion.persisted?
-        render json: @bookSuggestion.erros
+        #if @bookSugesstion.persisted? then
+        #  return render json:  @bookSuggestion, status: :created 
+        #else 
+        #  render json: @bookSuggestion.erros
+        #end
+        render json: BookSuggestion.create(book_suggestion_params)
       end
 
       def book_suggestion_params
-        params.require(:book_suggestion).permit(:synopsis, :price, :author, :title, :link, :edithor, :year, :user_id)
+        params.require(:book_suggestion).permit(:synopsis, :price, :author, :title, :link, :editor, :year, :user_id)
       end
     end
   end
