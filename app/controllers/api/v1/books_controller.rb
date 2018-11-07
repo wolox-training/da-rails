@@ -12,6 +12,11 @@ module Api
         @book = Book.find(params[:id])
         render json: @book
       end
+
+      def isbn
+        book_info = OpenLibraryService.new().book_info('0201558025') 
+        render json: book_info
+      end
     end
   end
 end
