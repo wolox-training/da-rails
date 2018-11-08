@@ -6,6 +6,6 @@ class RentMailer < ApplicationMailer
 
   def rent_expire(rent)
     @rent = rent
-    mail(to: @rent.user.email, subject: I18n.t("mailer.rent_mailer.rent_expire.subject"))
+    mail(to: @rent.user.email, subject: I18n.t('mailer.rent_mailer.rent_expire.subject'))
   end
 end
