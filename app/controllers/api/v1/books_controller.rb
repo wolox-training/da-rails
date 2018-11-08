@@ -15,7 +15,9 @@ module Api
 
       def isbn
         book_info = OpenLibraryService.new.book_info(params[:isbn])
-        render json: book_info
+        return render json: book_info if book_info.present?
+
+        render json: { error: I18n.t('errors.book.isbn.not_found') }, status: :not_found
       end
     end
   end

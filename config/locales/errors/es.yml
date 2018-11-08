@@ -1,0 +1,5 @@
+es:
+  errors:
+      book:
+        isbn:
+          not_found: 'Información no encontrada sobre el libro'

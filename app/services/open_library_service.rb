@@ -1,9 +1,9 @@
 class OpenLibraryService
   include HTTParty
-  base_uri 'https://openlibrary.org/api/'
+  base_uri 'https://openlibrary.org'
 
   def book_info(isbn)
-    @options = { bibkeys: { ISBN: isbn }, format: 'json', jscmd: 'data' }
-    self.class.get('books', @options)
+    @options = { query: { bibkeys: "ISBN:#{isbn}", format: 'json', jscmd: 'data' } }
+    self.class.get('/api/books', @options)
   end
 end
