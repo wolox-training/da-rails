@@ -5,3 +5,8 @@ es:
         title: 'Exito!!'
         main_message: 'El prestamo para %{book} ha sido registrado exitosamente'
         subject: 'Enviando un email para confirmar el prestamo'
+      rent_expire:
+        title: 'El alquiler expira hoy'
+        main_message: 'El alquiler de %{book} está expirando hoy'
+        subject: 'Atención, su alquiler está a punto de caducar'
+

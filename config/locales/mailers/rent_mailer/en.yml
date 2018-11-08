@@ -5,3 +5,8 @@ en:
         title: 'Good job!!!'
         main_message: 'The rent for %{book} was created'
         subject: 'Sending a email to rents confirm'
+
+      rent_expire:
+        title: 'Rent is expiring today'
+        main_message: 'The rent for %{book} is expiring today'
+        subject: 'Attention, your rent it is close to expire'
