@@ -4,7 +4,7 @@ module Api
   module V1
     describe BookSuggestionsController, type: :controller do
       describe 'POST #create' do
-        context 'With the correct params incrementes the book suggestions counter by one,' do
+        context 'With the correct params' do
           let!(:new_book_suggestions_attributes) do
             { book_suggestion: attributes_for(:book_suggestion) }
           end
@@ -20,7 +20,7 @@ module Api
           end
         end
 
-        context 'With the wrong params not incrementes the book suggestions' do
+        context 'With the wrong params' do
           let!(:new_book_suggestions_attributes) do
             { book_suggestion: attributes_for(:book_suggestion, price: nil) }
           end
