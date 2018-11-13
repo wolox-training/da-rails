@@ -11,12 +11,12 @@ module Api
 
       def create
         @rent = authorize Rent.create(rent_params)
-        
+
         if @rent.persisted?
           RentMailer.rent_created(@rent).deliver_later
-          render json: @rent
+          render json: @rent, status: :created
         else
-          render json: @rent.errors
+          render json: @rent.errors, status: :unprocessable_entity
         end
       end
 
