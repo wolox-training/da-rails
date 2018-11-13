@@ -11,7 +11,7 @@ module Api
 
       def create
         @rent = authorize Rent.create(rent_params)
-
+        
         if @rent.persisted?
           RentMailer.rent_created(@rent).deliver_later
           render json: @rent
