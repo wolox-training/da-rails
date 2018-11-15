@@ -1,0 +1,4 @@
+:schedule:
+  hello_world:
+    cron: '0 0 9 * * * America/Sao_Paulo'
+    class: RentExpirationJob
