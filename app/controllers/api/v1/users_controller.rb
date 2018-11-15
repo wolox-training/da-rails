@@ -6,7 +6,6 @@ module Api
       def index
         render_paginated User
       end
-
     end
   end
 end
